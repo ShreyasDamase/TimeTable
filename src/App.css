@@ -1,0 +1,66 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif; /* Set your preferred font */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('../public/background.png') no-repeat center center fixed;
+  background-size: cover; /* Cover the entire screen */
+  color: rgb(10, 10, 10); /* Text color for better contrast */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.date-time {
+  margin: 20px;
+}
+
+.timetable {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  margin-left: 10%;
+  width: 80%;
+  margin-right: 10%;
+}
+
+.time-slot {
+  padding: 15px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+ 
+
+@media (max-width: 768px) {
+  .time-slot {  
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.highlight {
+  border: 2px solid #ffcc00; /* Yellow border */
+  background-color: #ffe68a; /* Light yellow background */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+.motivation {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
